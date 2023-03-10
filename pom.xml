@@ -24,12 +24,12 @@
     <snapshotRepository>
         <id>central</id>
         <name>cb-libs-snapshots</name>
-        <url>http://54.82.52.214:8082/artifactory/cb-libs-snapshots/</url>
+        <url>http://54.82.52.214:8081/artifactory/cb-libs-snapshots/</url>
     </snapshotRepository>
     <repository>
         <id>central</id>
         <name>cb-libs-snapshots</name>
-        <url>http://54.82.52.214:8082/artifactory/cb-libs-snapshots/</url>
+        <url>http://54.82.52.214:8081/artifactory/cb-libs-snapshots/</url>
     </repository>	
 </distributionManagement>
 

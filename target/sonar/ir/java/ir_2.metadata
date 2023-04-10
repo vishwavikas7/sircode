@@ -1,0 +1,3 @@
+com.aws.codestar.projecttemplates.configuration.MvcConfig#jspViewResolver()Lorg/springframework/web/servlet/view/InternalResourceViewResolver;
+org.springframework.web.servlet.view.InternalResourceViewResolver#<init>()V
+org.springframework.web.servlet.view.InternalResourceViewResolver#instance-init#

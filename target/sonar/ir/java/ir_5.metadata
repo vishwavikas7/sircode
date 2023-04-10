@@ -1,0 +1,3 @@
+com.aws.codestar.projecttemplates.configuration.ApplicationConfig#helloWorld()Lcom/aws/codestar/projecttemplates/controller/HelloWorldController;
+com.aws.codestar.projecttemplates.controller.HelloWorldController#<init>(Ljava/lang/String;)V
+com.aws.codestar.projecttemplates.controller.HelloWorldController#instance-init#

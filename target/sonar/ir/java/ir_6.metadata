@@ -1,0 +1,3 @@
+com.aws.codestar.projecttemplates.configuration.ApplicationConfig#placeHolderConfigurer()Lorg/springframework/context/support/PropertySourcesPlaceholderConfigurer;
+org.springframework.context.support.PropertySourcesPlaceholderConfigurer#<init>()V
+org.springframework.context.support.PropertySourcesPlaceholderConfigurer#instance-init#

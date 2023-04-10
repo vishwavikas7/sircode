@@ -1,0 +1,7 @@
+organization=kummari
+projectKey=kummari_9amjavacodecheck
+serverUrl=https://sonarcloud.io
+serverVersion=8.0.0.38669
+dashboardUrl=https://sonarcloud.io/dashboard?id=kummari_9amjavacodecheck
+ceTaskId=AYa_fImMV7eoknjSDWl7
+ceTaskUrl=https://sonarcloud.io/api/ce/task?id=AYa_fImMV7eoknjSDWl7

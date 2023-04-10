@@ -1,0 +1,3 @@
+com.aws.codestar.projecttemplates.configuration.MvcConfig#getMultipartResolver()Lorg/springframework/web/multipart/commons/CommonsMultipartResolver;
+org.springframework.web.multipart.commons.CommonsMultipartResolver#<init>()V
+org.springframework.web.multipart.commons.CommonsMultipartResolver#instance-init#

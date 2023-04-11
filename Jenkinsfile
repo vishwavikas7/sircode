@@ -5,12 +5,13 @@ pipeline {
          jdk 'java'
     }
     stages {
+        /*
         stage('Stage-0 : Static Code Analysis') { 
             steps {
                 sh 'mvn clean verify sonar:sonar'
             }
         }
-/*
+*/
         stage('Stage-1 : Clean') { 
             steps {
                 sh 'mvn clean'
@@ -31,21 +32,25 @@ pipeline {
                 sh 'mvn test'
             }
         }
-        stage('Stage-6 : Verify') { 
+        stage('Stage-5 : Verify') { 
             steps {
                 sh 'mvn verify'
             }
         }
-        stage('Stage-7 : Package') { 
+        stage('Stage-6 : Package') { 
             steps {
                 sh 'mvn package'
             }
         }
-        stage('Stage-5 : Install') { 
+        stage('Stage-7 : Install') { 
             steps {
                 sh 'mvn install'
             }
         }
-*/
+        stage('Stage-8 : Deploy') { 
+            steps {
+                sh 'mvn deploy'
+            }
+        }
     }
 }

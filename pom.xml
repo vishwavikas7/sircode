@@ -26,7 +26,7 @@
     <snapshotRepository>
         <id>snapshots</id>
         <name>jfrog.cloudbinary.io-snapshots</name>
-        <url>http://18.233.152.129:8081/artifactory/libs-snapshot-local</url>
+        <url>http://44.204.189.57:8081/artifactory/libs-snapshot-local</url>
     </snapshotRepository>
 
      <!--
@@ -45,7 +45,7 @@
     <repository>
         <id>central</id>
         <name>jfrog.cloudbinary.io-releases</name>
-        <url>http://18.233.152.129:8081/artifactory/libs-release-local</url>
+        <url>http://44.204.189.57:8081/artifactory/libs-release-local</url>
     </repository>
 
      

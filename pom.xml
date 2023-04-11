@@ -19,19 +19,19 @@
         <sonar.login>sqp_9296e5017dee6ccfb247e1a660ed1fa469a88685</sonar.login>
 -->
     </properties>
-
-  
- <distributionManagement>
+    
+<distributionManagement>
     <snapshotRepository>
         <id>snapshots</id>
         <name>libs-snapshot-local</name>
-        <url>http://44.204.189.57:8081/artifactory/libs-snapshot-local/</url>
+        <url>http://44.203.139.33:8082/artifactory/libs-snapshot-local/</url>
     </snapshotRepository>
+    
     <repository>
-        <id>central</id>
+        <id>release</id>
         <name>libs-release-local</name>
-        <url>http://44.204.189.57:8081/artifactory/libs-release-local/</url>
-    </repository>	
+        <url>http://44.203.139.33:8082/artifactory/libs-release-local/</url>
+    </repository>
 </distributionManagement>
     
     <dependencies>

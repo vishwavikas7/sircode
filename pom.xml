@@ -2,8 +2,8 @@
     xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.aws.codestar.projecttemplates</groupId>
-    <artifactId>cb8am</artifactId>
-    <version>1.0.1-SNAPSHOT</version>
+    <artifactId>cbdevops8am</artifactId>
+    <version>1.0.0</version>
     <packaging>war</packaging>
     <name>Cloud Binary Sample Spring MVC Application</name>
 
@@ -24,13 +24,13 @@
     <snapshotRepository>
         <id>snapshots</id>
         <name>libs-snapshot-local</name>
-        <url>http://44.203.139.33:8082/artifactory/libs-snapshot-local/</url>
+        <url>http://54.152.32.116:8082/artifactory/libs-snapshot-local/</url>
     </snapshotRepository>
     
     <repository>
         <id>release</id>
         <name>libs-release-local</name>
-        <url>http://44.203.139.33:8082/artifactory/libs-release-local/</url>
+        <url>http://54.152.32.116:8082/artifactory/libs-release-local/</url>
     </repository>
 </distributionManagement>
     

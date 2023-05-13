@@ -1,0 +1,29 @@
+- name: Create EC2 instance
+  hosts: localhost
+  gather_facts: False
+
+  vars:
+    instance_type: t2.micro
+    ami: ami-0c55b159cbfafe1f0
+    keypair: my-keypair
+    region: us-west-2
+    count: 1
+
+  tasks:
+    - name: Provision EC2 instance
+      ec2:
+        instance_type: "{{ instance_type }}"
+        image: "{{ ami }}"
+        key_name: "{{ keypair }}"
+        region: "{{ region }}"
+        count: "{{ count }}"
+      register: ec2_result
+
+    - name: Add new instance to host group
+      add_host:
+        hostname: "{{ item.private_ip }}"
+        ansible_user: ec2-user
+        ansible_ssh_private_key_file: /path/to/my-keypair.pem
+        groups: new_instances
+      loop: "{{ ec2_result.instance_ids }}"
+

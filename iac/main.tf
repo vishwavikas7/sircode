@@ -11,8 +11,17 @@ terraform {
 # Authentication to AWS from Terraform code
 provider "aws" {
   region  = "us-east-1"
-  profile = "default"
+  #profile = "default"
 }
+
+terraform {
+  backend "s3" {
+    bucket = "codewithck.com"
+    key    = "terraform.tfstate"
+    region = "us-east-1"
+  }
+}
+
 
 # Create a VPC in AWS part of region i.e. Mumbai 
 resource "aws_vpc" "cloudbinary_vpc" {

@@ -4,6 +4,9 @@ node {
       git url: 'https://github.com/kesavkummari/cb9amjava.git', branch: 'b69am'
       mvnHome = tool 'maven'
    }
+  stage ('Code Scan') {
+      sh "'${mvnHome}/bin/mvn' verify sonar:sonar"
+  }
   stage ('Clean') {
       sh "'${mvnHome}/bin/mvn' clean"
   }

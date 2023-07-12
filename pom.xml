@@ -2,10 +2,10 @@
     xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.aws.codestar.projecttemplates</groupId>
-    <artifactId>cb10amdevops</artifactId>
-    <version>9.0.0-SNAPSHOT</version>
+    <artifactId>b69am</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
     <packaging>war</packaging>
-    <name>Cloud Binary Sample Spring MVC Application</name>
+    <name>Cloud Binary - Sample Spring MVC Application</name>
 
     <properties>
         <junit.platform.version>1.2.0</junit.platform.version>

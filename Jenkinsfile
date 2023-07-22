@@ -40,15 +40,20 @@ pipeline {
                 sh 'mvn package'
             }
         }
-          stage('Stage-8 : Deployment - Deploy a Artifact cloudbinary-5.0.0.war file to Tomcat Server') { 
+        stage('Stage-8 : Deploy an Artifact to Artifactory Manager i.e. Nexus/Jfrog') { 
             steps {
-                sh 'curl -u manager:Str0ngManagerPassw3rd -T target/**.war "http://3.86.189.197:8080/manager/text/deploy?path=/opswork&update=true"'
-            }
-        } 
-        stage('Stage-9 : SmokeTest') { 
-            steps {
-                sh 'curl --retry-delay 10 --retry 5 "http://3.86.189.197:8080/opswork"'
+                sh 'mvn deploy'
             }
         }
+        //   stage('Stage-8 : Deployment - Deploy a Artifact cloudbinary-5.0.0.war file to Tomcat Server') { 
+        //     steps {
+        //         sh 'curl -u manager:Str0ngManagerPassw3rd -T target/**.war "http://3.86.189.197:8080/manager/text/deploy?path=/opswork&update=true"'
+        //     }
+        // } 
+        // stage('Stage-9 : SmokeTest') { 
+        //     steps {
+        //         sh 'curl --retry-delay 10 --retry 5 "http://3.86.189.197:8080/opswork"'
+        //     }
+        // }
     }
 }

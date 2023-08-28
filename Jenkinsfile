@@ -19,13 +19,13 @@ node {
   stage ('Package') {
       sh "'${mvnHome}/bin/mvn' package"
   }
-  stage ('Verify') {
+//  stage ('Verify') {
       sh "'${mvnHome}/bin/mvn' verify"
-  }
-  stage ('Install') {
+  } //
+ // stage ('Install') {
       sh "'${mvnHome}/bin/mvn' install"
-  }
-  stage ('Deploy') {
+  }  //
+  //stage ('Deploy') {
       sh "'${mvnHome}/bin/mvn' deploy"
-  }
+  } //
 }
